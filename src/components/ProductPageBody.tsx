@@ -16,6 +16,7 @@ const ProductPage: React.FC = () => {
   const decreaseQuantity = () => setQuantity((q) => (q > 1 ? q - 1 : q));
 
   const handleAddToCart = () =>{
+    alert("Item added!")
     addToCart({
       id: 1,
       name: "Fall Limited Edition Sneakers",
