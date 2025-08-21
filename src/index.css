@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+:root {
+  /* Primary */
+  --Orange: hsl(26, 100%, 55%);
+  --Pale-orange: hsl(25, 100%, 94%);
+
+  /* Neutral */
+  --Very-dark-blue: hsl(220, 13%, 13%);
+  --background-color: hsla(0, 0%, 0%, 0.75);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+
+  /* Font sizes */
+  --font-size-base: 16px;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--White);
+}
+
+header {
+  background-color: var(--Very-dark-blue);
+ height: 50px;
+  padding: 1rem;
+  text-align: center;
+  color: var(--Black);
+}
+
+/* Updated items */
+
+.cart-dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: var(--White);
+  border: 1px solid var(--Grayish-blue);
+  border-radius: 10px;
+  width: 250px;
+  padding: 1rem;
+  box-shadow: 0px 4px 10px var(--background-color);
+}
+
+.view-cart-btn {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background: var(--Orange);
+  color: var(--White);
+  border-radius: 8px;
+  cursor: pointer;
+}
