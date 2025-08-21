@@ -69,17 +69,20 @@ This project helped my understanding of:
 Here’s a small snippet I’m proud of:
 
 ```tsx
-const addToCart = (item: CartItem) => {
-  setCart((prev) => {
-    const existing = prev.find((p) => p.id === item.id);
-    if (existing) {
-      return prev.map((p) =>
-        p.id === item.id ? { ...p, quantity: p.quantity + item.quantity } : p
-      );
-    }
-    return [...prev, item];
-  });
-};
+export const CartProvider = ({ children }: { children: ReactNode }) => {
+  const [cart, setCart] = useState<CartItem[]>([]);
+
+  const addToCart = (item: CartItem) => {
+    setCart((prev) => {
+      const existing = prev.find((c) => c.id === item.id);
+      if (existing) {
+        return prev.map((c) =>
+          c.id === item.id ? { ...c, quantity: c.quantity + item.quantity } : c
+        );
+      }
+      return [...prev, item];
+    });
+  }};
 
 ```
 ## Continued Development
