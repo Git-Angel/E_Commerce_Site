@@ -32,9 +32,12 @@ Users should be able to:
 
 ### Screenshots
 
-| Mobile Design |
+| Desktop Design|
 |---------------|
 | ![Mobile Design](./src/assets/Desktop-View.png)|
+|---------------|
+| Mobile Design |
+|---------------|
 | ![Desktop Design](./src/assets/Mobile-View.png)|
 
 ### Links
