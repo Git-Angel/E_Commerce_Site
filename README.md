@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Screenshots
 
-| Mobile Design | Complete State |
-|---------------|----------------|
+| Mobile Design |
+|---------------|
 | ![Mobile Design](./src/assets/Desktop-View.png)|
 | ![Desktop Design](./src/assets/Mobile-View.png)|
 
