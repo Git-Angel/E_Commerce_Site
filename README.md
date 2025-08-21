@@ -34,8 +34,8 @@ Users should be able to:
 
 | Mobile Design | Complete State |
 |---------------|----------------|
-| ![Mobile Design](./src/assets/Desktop View.png)|
-| ![Desktop Design](./src/assets/Mobile View.png)|
+| ![Mobile Design](../src/assets/Desktop-View.png)|
+| ![Desktop Design](../src/assets/Mobile-View.png)|
 
 ### Links
 
