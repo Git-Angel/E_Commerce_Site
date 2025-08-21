@@ -29,11 +29,13 @@ Users should be able to:
 - Add items to the cart
 - View the cart and remove items from it
 
-### Screenshot
 
-![](./screenshot.jpg)
+### Screenshots
 
-
+| Mobile Design | Complete State |
+|---------------|----------------|
+| ![Mobile Design](./src/assets/Desktop View.png)|
+| ![Desktop Design](./src/assets/Mobile View.png)|
 
 ### Links
 
