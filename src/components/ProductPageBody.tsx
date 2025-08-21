@@ -1,26 +1,32 @@
 import { useState } from "react";
 import "./ProductPageBody.css";
-import product1 from "../image-product-1.jpg";
-import product2 from "../image-product-2.jpg";
-import product3 from "../image-product-3.jpg";
-import product4 from "../image-product-4.jpg";
+import product1 from "../assets/image-product-1.jpg";
+import product2 from "../assets/image-product-2.jpg";
+import product3 from "../assets/image-product-3.jpg";
+import product4 from "../assets/image-product-4.jpg"
+import { useCart } from "../CartContext";
 
 const ProductPage: React.FC = () => {
   const images = [product1, product2, product3, product4];
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [quantity, setQuantity] = useState<number>(1);
+    const { addToCart } = useCart();
 
   const increaseQuantity = () => setQuantity((q) => q + 1);
   const decreaseQuantity = () => setQuantity((q) => (q > 1 ? q - 1 : q));
 
-  const handleAddToCart = () => {
-    alert(`Added ${quantity} item(s) of "Fall Limited Edition Sneakers" to cart!`);
-    
-  };
+  const handleAddToCart = () =>{
+    addToCart({
+      id: 1,
+      name: "Fall Limited Edition Sneakers",
+      price: 125,
+      quantity,
+      image: product1,
+    });
+  }
 
   return (
     <main className="product-layout" role="main">
-      {/* LEFT: Image gallery */}
       <section className="gallery" aria-label="Product gallery">
         <div className="main-image">
           <img src={images[selectedIndex]} alt={`Product image ${selectedIndex + 1}`} />
