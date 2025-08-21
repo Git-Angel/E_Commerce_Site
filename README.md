@@ -76,6 +76,7 @@ const addToCart = (item: CartItem) => {
   });
 };
 
+```
 ## Continued Development
 
 In future projects, I want to:
@@ -89,7 +90,7 @@ In future projects, I want to:
 ## Useful Resources
 
 React Docs
- - Always the go-to for React concepts and hooks.
+ - For React concepts and hooks.
 
 CSS Tricks Flexbox Guide
  - Helped with responsive layouts.
